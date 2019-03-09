@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:id="@+id/total_score_sub_contraint_layout">
+
+    <TextView
+            android:text="@string/score_label"
+            android:layout_width="63dp"
+            android:layout_height="50dp"
+            android:id="@+id/total_score_label" android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:textAlignment="center"/>
+    <TextView
+            android:layout_width="171dp"
+            android:layout_height="50dp"
+            android:id="@+id/total_running_score"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@+id/total_score_label" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"/>
+</android.support.constraint.ConstraintLayout>

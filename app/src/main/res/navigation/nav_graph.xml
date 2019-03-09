@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph" app:startDestination="@id/main">
+
+    <fragment android:id="@+id/main" android:name="net.mharoon.navexample.Main" android:label="fragment_main"
+              tools:layout="@layout/fragment_main">
+        <action android:id="@+id/action_main_to_courses" app:destination="@id/courses"/>
+    </fragment>
+    <fragment android:id="@+id/courses" android:name="net.mharoon.navexample.courses" android:label="fragment_courses"
+              tools:layout="@layout/fragment_courses">
+        <action android:id="@+id/action_courses_to_courseDetailsFrag" app:destination="@id/courseDetailsFrag"/>
+    </fragment>
+    <fragment android:id="@+id/courseDetailsFrag" android:name="net.mharoon.navexample.CourseDetailsFrag"
+              android:label="fragment_course_details" tools:layout="@layout/fragment_course_details">
+        <action android:id="@+id/action_courseDetailsFrag_to_courseTeeBox" app:destination="@id/courseTeeBox"/>
+    </fragment>
+    <fragment android:id="@+id/courseTeeBox" android:name="net.mharoon.navexample.CourseTeeBox"
+              android:label="fragment_course_tee_box" tools:layout="@layout/fragment_course_tee_box">
+        <action android:id="@+id/action_courseTeeBox_to_holeFragment" app:destination="@id/holeFragment"/>
+    </fragment>
+    <fragment android:id="@+id/holeFragment" android:name="net.mharoon.navexample.HoleFragment"
+              android:label="fragment_hole" tools:layout="@layout/fragment_hole"/>
+</navigation>
